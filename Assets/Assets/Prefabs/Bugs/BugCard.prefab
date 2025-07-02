@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 335867393920912049}
   - component: {fileID: 2640305647584258012}
   - component: {fileID: 1386893465626112982}
+  - component: {fileID: 5111254837761014106}
   m_Layer: 5
   m_Name: BugCard
   m_TagString: Untagged
@@ -328,3 +329,22 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5111254837761014106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6652871736262974139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebb6ed46809ca3a478a91c133d07e69d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colliderName: {fileID: 0}
+  bugCardSO: {fileID: 0}
+  bugSprite: {fileID: 0}
+  bugPrevPrefab: {fileID: 5377310033750123022, guid: 75260f0cb1222f1479c49ca83fca90e3, type: 3}
+  bugPrefab: {fileID: 7490684495033502317, guid: fcd426916dd9c2247be147a4945ecfed, type: 3}
+  ColliderCheck: 0
+  CardSelected: 0

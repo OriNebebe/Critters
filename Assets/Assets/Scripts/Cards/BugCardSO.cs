@@ -5,7 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Cards/Bug Cards")]
 public class BugCardSO : ScriptableObject
 {
-    public Texture2D Icon;
+    public Texture2D icon;
+    public Sprite bugSprite;
     public int cost;
     public float cooldown;
 }

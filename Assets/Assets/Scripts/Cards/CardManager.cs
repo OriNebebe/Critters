@@ -26,6 +26,8 @@ public class CardManager : MonoBehaviour
 
     private void Start()
     {
+        // Adds the amount of cards you added into the roaster.
+
         numberOfCards = bugCardsSO.Length;
         bugCards = new GameObject[numberOfCards];
 
@@ -39,11 +41,15 @@ public class CardManager : MonoBehaviour
     {
 
         GameObject card = Instantiate(cardPrefab, cardHolderTransform);
+        CardInteractionManager cardInteractionManager = card.GetComponent<CardInteractionManager>();
+
+        cardInteractionManager.bugCardSO = bugCardsSO[index];
+        cardInteractionManager.bugSprite = bugCardsSO[index].bugSprite;
 
         bugCards[index] = card;
 
         //Variables
-        bugIcon = bugCardsSO[index].Icon;
+        bugIcon = bugCardsSO[index].icon;
         cost = bugCardsSO[index].cost;
         cooldown = bugCardsSO[index].cooldown;
 
